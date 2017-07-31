@@ -1,8 +1,41 @@
 # javascript-spec
 
+## 分号
+
+**1**、 在 `[` `(` `+` `-` 前面加分号
+
+```js
+;(function() {
+        console.log(;some)
+})
+;[1].map(function (item) {
+	console.log(item)
+})
+;++a
+;--a
+```     
+
 ## 注释
 
 函数注释使用 JSDoc 风格，其他注释随意。
+
+### 原则
+
+只在必要的地方注释，尽量通过变量名和语句替代注释。例如：
+
+```js
+// bad
+if (age < 18) {
+    console.log('Close your eyes')
+}
+// good
+var isKid = age < 18
+if (isKid) {
+    console.log('Close your eyes')
+}
+```
+
+必要时直接通过文档的方式写出程序流程和设计方式
 
 ### @param
 
