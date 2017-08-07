@@ -75,7 +75,7 @@ function sayHello(somebody) {
 
 ```js
 /**
- * @param {String} somebody
+ * @param {string} somebody
  */
 function sayHello(somebody) {
     alert('Hello ' + somebody);
@@ -87,7 +87,7 @@ function sayHello(somebody) {
 
 ```js
 /**
- * @param {String} somebody - Somebody's name.
+ * @param {string} somebody - Somebody's name.
  */
 function sayHello(somebody) {
     alert('Hello ' + somebody);
@@ -102,9 +102,9 @@ function sayHello(somebody) {
 ```jsx
 /**
  * Assign the project to an employee.
- * @param {Object} employee - The employee who is responsible for the project.
- * @param {String} employee.name - The name of the employee.
- * @param {String} employee.department - The employee's department.
+ * @param {object} employee - The employee who is responsible for the project.
+ * @param {string} employee.name - The name of the employee.
+ * @param {string} employee.department - The employee's department.
  */
 Project.prototype.assign = function(employee) {
     // ...
@@ -116,9 +116,9 @@ Project.prototype.assign = function(employee) {
 ```js
 /**
  * Assign the project to a list of employees.
- * @param {Object[]} employees - The employees who are responsible for the project.
- * @param {String} employees[].name - The name of an employee.
- * @param {String} employees[].department - The employee's department.
+ * @param {object[]} employees - The employees who are responsible for the project.
+ * @param {string} employees[].name - The name of an employee.
+ * @param {string} employees[].department - The employee's department.
  */
 Project.prototype.assign = function(employees) {
     // ...
@@ -133,7 +133,7 @@ Project.prototype.assign = function(employees) {
 
 ```js
 /**
- * @param {String=} somebody - Somebody's name.
+ * @param {string=} somebody - Somebody's name.
  */
 function sayHello(somebody) {
     if (!somebody) {
@@ -146,7 +146,7 @@ function sayHello(somebody) {
 **不要将默认参数值写在注释中，因为这样要维护两份默认值。如果漏掉了任何一个，文档就是错误的**
 ```js
 /** bad! bad! bad! bad! bad! bad! bad! bad! bad! bad! bad!
- * @param {String} [somebody=John Doe] - Somebody's name.
+ * @param {string} [somebody=John Doe] - Somebody's name.
  * bad! bad! bad! bad! bad! bad! bad! bad! bad! bad! bad! */
 ```
 
@@ -154,7 +154,7 @@ function sayHello(somebody) {
 
 ```js
 /**
- * @param {(String|String[])} [somebody] - Somebody's name, or an array of names.
+ * @param {(string|string[])} [somebody] - Somebody's name, or an array of names.
  */
 function sayHello(somebody) {
     if (!somebody) {
@@ -170,7 +170,7 @@ function sayHello(somebody) {
 
 ```js
 /**
- * @param {Any} somebody - Whatever you want.
+ * @param {any} somebody - Whatever you want.
  */
 function sayHello(somebody) {
     console.log('Hello ' + JSON.Stringify(somebody));
@@ -204,7 +204,7 @@ function sum(num) {
  *
  * @callback requestCallback
  * @param {number} responseCode
- * @param {String} responseMessage
+ * @param {string} responseMessage
  */
 
 /**
@@ -226,9 +226,9 @@ function doSomethingAsynchronously(cb) {
 ```js
 /**
  * Returns the sum of a and b
- * @param {Number} a
- * @param {Number} b
- * @returns {Number}
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
  */
 function sum(a, b) {
     return a + b;
@@ -238,9 +238,9 @@ function sum(a, b) {
 ```js
 /**
  * Returns the sum of a and b
- * @param {Number} a
- * @param {Number} b
- * @returns {Number} Sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} Sum of a and b
  */
 function sum(a, b) {
     return a + b;
@@ -250,10 +250,10 @@ function sum(a, b) {
 ```js
 /**
  * Returns the sum of a and b
- * @param {Number} a
- * @param {Number} b
- * @param {Boolean} retArr If set to true, the function will return an array
- * @returns {Number|Array} Sum of a and b or an array that contains a, b and the sum of a and b.
+ * @param {number} a
+ * @param {number} b
+ * @param {boolean} retArr If set to true, the function will return an array
+ * @returns {number|array} Sum of a and b or an array that contains a, b and the sum of a and b.
  */
 function sum(a, b, retArr) {
     if (retArr) {
@@ -278,7 +278,7 @@ function sum(a, b, retArr) {
  * @example
  * globalNS.method(5, 15);
  * // 3
- * @returns {Number} Returns the value of x for the equation.
+ * @returns {number} Returns the value of x for the equation.
  */
 globalNS.method1 = function (a, b) {
     return b / a;
