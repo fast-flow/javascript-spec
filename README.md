@@ -170,7 +170,7 @@ function sayHello(somebody) {
 
 ```js
 /**
- * @param {*} somebody - Whatever you want.
+ * @param {any} somebody - Whatever you want.
  */
 function sayHello(somebody) {
     console.log('Hello ' + JSON.Stringify(somebody));
