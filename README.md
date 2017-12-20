@@ -17,6 +17,80 @@
 ;/z/.test('z')
 ```
 
+
+## 变量命名
+
+不使用类型前缀命名
+
+```js
+/*
+ * bad
+ */
+// element
+var eBtn = document.getElementById('btn')
+// array
+var aQueue = ['1','2']
+// string
+var sName = 'nimo'
+// integer
+var iCount = 2
+// object
+var oUser = {name: 'nimo'}
+// float
+var flValue = 1.223123
+// regexp
+var reName = /nimo/
+// function
+var fnCall = function () {/*...*/}
+```
+
+**在必要时通过后缀标示或通过单词含义去表达类型**
+
+> 让维护者通过单词就能知道类型是什么
+
+```js
+/*
+ * array
+ */
+var id = 'a123'
+var idArray = ['a123', 'b123']
+// 尽量避免使用 var id= 'a123,b123' 需要获取数据时通过 idArray.join(',') 获取
+// queue 已经能够表明这是一个数组，不应该存在 queue = '1,2,3'
+var queue = ['1', '2']
+
+/*
+ * element
+ */
+// btn 一般都是 element不需要做标示
+var btn = document.getElementById('btn')
+
+/*
+ * object
+ */
+var userData = {name: 'nimo'}
+var actionDict = {'delete': '删除', 'edit': '编辑'}
+var cacheMap = {}; cacheMap[url] = {/*...*/}
+
+/*
+ * number
+ */
+// count 肯定是数字类型
+var count = 1
+// iAge 是多此一举
+var age = 10
+// 可以不命名成 flPrice
+var price = 10.5
+
+/*
+ * function
+ */
+
+// 看到动词就知道是个函数
+var changeName = function(){}
+var getData = function () {}
+var setData = function () {}
+```
+
 ## 注释
 
 函数注释使用 JSDoc 风格，其他注释随意。
