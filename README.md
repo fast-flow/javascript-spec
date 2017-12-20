@@ -26,22 +26,14 @@
 /*
  * bad
  */
-// element
-var eBtn = document.getElementById('btn')
-// array
-var aQueue = ['1','2']
-// string
-var sName = 'nimo'
-// integer
-var iCount = 2
-// object
-var oUser = {name: 'nimo'}
-// float
-var flValue = 1.223123
-// regexp
-var reName = /nimo/
-// function
-var fnCall = function () {/*...*/}
+var eBtn = document.getElementById('btn') // element
+var aQueue = ['1','2'] // array
+var sName = 'nimo' // string
+var iCount = 2 // integer
+var oUser = {name: 'nimo'} // object
+var flValue = 1.223123 // float
+var reName = /nimo/ // regexp
+var fnCall = function () {/*...*/} // function
 ```
 
 **在必要时通过后缀标示或通过单词含义去表达类型**
@@ -55,14 +47,14 @@ var fnCall = function () {/*...*/}
 var id = 'a123'
 var idArray = ['a123', 'b123']
 // 尽量避免使用 var id= 'a123,b123' 需要获取数据时通过 idArray.join(',') 获取
-// queue 已经能够表明这是一个数组，不应该存在 queue = '1,2,3'
+
+// queue 已经能够表明这是一个数组
 var queue = ['1', '2']
 
 /*
  * element
  */
-// btn 一般都是 element不需要做标示
-var btn = document.getElementById('btn')
+var btn = document.getElementById('btn') // btn 一般都是 element不需要做标示
 
 /*
  * object
@@ -74,12 +66,9 @@ var cacheMap = {}; cacheMap[url] = {/*...*/}
 /*
  * number
  */
-// count 肯定是数字类型
-var count = 1
-// iAge 是多此一举
-var age = 10
-// 可以不命名成 flPrice
-var price = 10.5
+var count = 1 // count 肯定是数字类型
+var age = 10 // iAge 是多此一举
+var price = 10.5 // 可以不命名成 flPrice
 
 /*
  * function
