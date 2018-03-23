@@ -2,20 +2,21 @@
 
 ## 分号
 
-**1**、 在 `[` `(` `+` `-` `/` 前面加分号
+**1**、 在
 
-```js
-;(function() {
-        console.log(;some)
-})
-;[1].map(function (item) {
-	console.log(item)
-})
-;++a
-;--a
-[]
-;/z/.test('z')
 ```
+[
+(
++
+-
+/
+`
+*
+```
+
+前面加分号
+
+[JavaScript 语句后应该加分号么？](https://www.zhihu.com/question/20298345)
 
 
 ## 变量命名
