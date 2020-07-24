@@ -82,9 +82,9 @@ var getData = function () {}
 var setData = function () {}
 ```
 
-## 注释
+### 变量声明
 
-函数注释使用 JSDoc 风格，其他注释随意。
+尽量使用 `const` ，其次 `let` 。 使用 `const` 能有效避免错误的重新赋值变量。
 
 ### 原则
 
